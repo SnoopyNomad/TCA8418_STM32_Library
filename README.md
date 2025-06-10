@@ -97,13 +97,13 @@ if(status != HAL_OK){
 ### Reading Key Events
 
 ```c
-uint8_t keyEvents[10];  // Array to store up to 10 events
-uint8_t numEvents;      // Number of events actually read
+uint8_t keyEvents[10]; // Array to store up to 10 events
+uint8_t numEvents; // Number of events actually read
 
 // Read all pending key events
 HAL_StatusTypeDef status = TCA8418_ReadKeyEvents(keyEvents, &numEvents);
 
-if(status == HAL_OK) {
+if(status == HAL_OK){
     // Process each event
     for(int i = 0; i < numEvents; i++){
         uint8_t keyNumber = keyEvents[i] & 0x7F; // Bits 6:0
