@@ -143,8 +143,7 @@ if(status != HAL_OK){
 
 2. Set up interrupt handler:
 ```c
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
     if(GPIO_Pin == TCA8418_INT_Pin){
         uint8_t keyEvents[10];
         uint8_t numEvents;
