@@ -47,7 +47,6 @@ git clone https://github.com/SnoopyNomad/TCA8418_STM32_Library.git
 ## Configuration
 
 The library is configured with the following default settings:
-- I2C Address: 0x34
 - Keypad Configuration: ROW0 and COL6:0 (7 keys)
 - Interrupts: Enabled for key events
 - GPIO Configuration: Unused pins configured as inputs with pull-up
